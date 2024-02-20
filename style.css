@@ -1,0 +1,142 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color:seashell;
+    background-color: black;
+    opacity: 0.9;
+
+}
+
+.logo-header{
+    text-align: center;
+}
+
+.logo{
+    height: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Align items at the beginning and end of the container */
+    align-items: center; /* Center items vertically */
+    height: 69px;
+    border: 1px solid seashell;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right !important; /* Center-align the list items */
+
+}
+
+
+.menu li {
+    display: inline-block; /* Display list items in a single row */
+    margin: 0 10px; /* Add margin between list items */
+    
+}
+
+.menu li a {
+    text-decoration: underline; 
+    color: white;
+    cursor: pointer !important; /* Change cursor to pointer on hover */
+   
+}
+
+.mission {
+    display: grid;
+    position: relative; /* Positioning context for the absolute positioning of the content */
+    text-align: center; /* Center-align text */
+
+}
+
+.mission-content{
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center content horizontally and vertically */
+}
+
+.mission-image{
+    height: 700px;
+    width: 1200px;
+    display: block; /* Ensures that margin: auto; works properly */
+    margin: 0 auto; /* Aligns the image horizontally to the center */
+    opacity: 0.75;
+}
+.tea{
+    width: 1000px;
+    display: grid;
+    margin-left: 20%;
+    justify-content: center; /* Positioning context for the absolute positioning of the content */
+    text-align: center; /* Center-align text */
+}
+
+.tea-header{
+    text-align: center;
+    align-content: center;
+}
+
+.tea-offerings{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex: 0 0 calc(33.33% - 20px); /* Set each item to occupy one-third of the container width with spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img{
+    height: 200px;
+    width: 300px;
+}
+
+
+.locations {
+    position: relative;
+    height: 500px; /* Set the height of the container to 500px */
+    width: 1200px; /* Set the width of the container to 1200px */
+    background-image: url("images/img-locations-background.jpg");
+    background-size:cover;
+    background-position: center;
+    margin-left: 10%;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white; /* Add white text color for better contrast */
+    text-align: center; /* Center-align text */
+}
+
+
+
+.location-offerings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the location items horizontally */
+    gap: 20px; /* Add spacing between items */
+}
+
+.location {
+    flex: 0 0 calc(20% - 20px); /* Set each item to occupy one-third of the container width with spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white; /* Add border to each location item */
+    background-color: black;
+    width: 300px;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+}
